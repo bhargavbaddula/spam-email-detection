@@ -34,7 +34,7 @@ X = cv.fit_transform(df['Message'])
 y = df['Label']
 model = MultinomialNB()
 model.fit(X, y)
-st.title("📧 Spam Email Detection")\
+st.title("📧 Spam Email Detection")
 msg = st.text_input("Enter Message")
 if st.button("Predict"):
     data = cv.transform([msg])
